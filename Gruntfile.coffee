@@ -1,4 +1,7 @@
 module.exports = (grunt) ->
+  test_dir = 'koans'
+  test_dir = 'katas' if grunt.cli.options.dojo
+
   grunt.initConfig
     watch:
       koans:
@@ -6,7 +9,7 @@ module.exports = (grunt) ->
         tasks: ['jasmine_node']
 
     jasmine_node:
-      koans: ['spec']
+      koans: ['spec/' + test_dir]
       options:
         coffee: true
         matchall: true
