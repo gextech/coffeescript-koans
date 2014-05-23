@@ -32,5 +32,6 @@ If everything is alright just clone and have fun:
 $ git clone git@github.com:gextech/coffeescript-koans.git
 $ cd coffeescript-koans
 $ npm install
-$ grunt
+$ grunt        # koans
+$ grunt --dojo # katas
 ```
